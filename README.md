@@ -16,8 +16,8 @@ Pernyataan masalah mungkin secara langsung menyebutkan bahwa Anda memiliki sebua
 
 ### Matrix Representation
 
-The graph might be represented as a matrix.
-Indications include statements referring to adjacent cells connecting. For instance, a problem might state, "From each cell, you can move left, right, up, or down."
+Graph mungkin direpresentasikan sebagai matrix.
+Indikasinya termasuk pernyataan yang merujuk pada sel-sel yang bersebelahan saling terhubung. Misalnya, sebuah masalah mungkin menyatakan, "Dari setiap sel, Anda dapat bergerak ke kiri, kanan, atas, atau bawah."
 
 ## Template
 
