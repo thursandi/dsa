@@ -1,3 +1,6 @@
+from typing import List
+
+
 def minFallingPathSum(self, matrix: List[List[int]]) -> int:
     """
         Find the minimum sum of a falling path through the matrix.
