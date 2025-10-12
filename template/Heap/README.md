@@ -33,3 +33,7 @@ Untuk melakukan ini, kita bisa mencoba menggunakan:
 
 - Array tak terurut (unsorted array): operasi insert akan memiliki kompleksitas waktu O(1) karena kita cukup menambahkan elemen di akhir array. Namun, untuk menemukan dan menghapus nilai minimum, kompleksitasnya menjadi O(N) karena kita harus melakukan iterasi ke seluruh elemen array untuk menemukannya.
 - Array terurut (sorted array): menemukan nilai minimum menjadi mudah dengan kompleksitas O(1), tetapi operasi insert akan memakan waktu O(N) karena kita harus mencari posisi yang tepat untuk nilai tersebut, lalu menggeser elemen-elemen setelahnya untuk memberi ruang dan menyisipkan nilai ke posisi tersebut.
+
+## Heap Data structure
+
+**Heap** adalah struktur data berbasis pohon yang bersifat khusus. Biasanya, ketika kita menyebut **heap**, yang dimaksud adalah **binary heap** yang menggunakan struktur **binary tree** (pohon biner). Namun, pohon tersebut tidak selalu harus bersifat biner. Secara khusus, terdapat **k-ary heap** (juga dikenal sebagai **k-heap**), yaitu pohon di mana setiap simpul memiliki *k* anak. Selama setiap simpul mengikuti **dua properti heap**, maka struktur tersebut tetap dianggap sebagai heap yang valid.
