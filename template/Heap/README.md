@@ -37,3 +37,25 @@ Untuk melakukan ini, kita bisa mencoba menggunakan:
 ## Heap Data structure
 
 **Heap** adalah struktur data berbasis pohon yang bersifat khusus. Biasanya, ketika kita menyebut **heap**, yang dimaksud adalah **binary heap** yang menggunakan struktur **binary tree** (pohon biner). Namun, pohon tersebut tidak selalu harus bersifat biner. Secara khusus, terdapat **k-ary heap** (juga dikenal sebagai **k-heap**), yaitu pohon di mana setiap simpul memiliki *k* anak. Selama setiap simpul mengikuti **dua properti heap**, maka struktur tersebut tetap dianggap sebagai heap yang valid.
+
+## Two Heap Properties
+
+Terdapat dua jenis heap — **Min Heap** dan **Max Heap**. Sebuah Min Heap adalah pohon yang memiliki dua properti:
+
+1. Hampir lengkap (almost complete), yaitu setiap level terisi penuh kecuali mungkin level terakhir (yang paling dalam). Elemen-elemen yang terisi di level terakhir disusun rata kiri (left-justified).
+2. Untuk setiap simpul (node), key-nya (prioritasnya) lebih besar daripada key milik induknya (parent) — inilah ciri khas Min Heap.
+
+Sedangkan Max Heap memiliki properti #1 yang sama, tetapi ***properti #2 yang berlawanan***, yaitu: untuk setiap simpul, key-nya lebih kecil daripada key milik induknya.
+Mari kita mainkan permainan "apakah ini sebuah heap?" pada struktur binary heap!
+
+![tebak heap yg mana](guest_a_heap.png)
+
+## Mengapa Heap Sangat Berguna
+
+Beberapa alasan mengapa struktur data heap sangat berguna:
+
+- Karena **heap adalah pohon lengkap** (*complete tree*), tinggi dari heap dijamin memiliki kompleksitas waktu **O(log(N))**. Ini berarti operasi yang berjalan dari akar ke daun akan memiliki kompleksitas **O(log(N))**.
+
+- Karena hanya **simpul-simpul dalam jalur dari akar ke daun** yang terurut (simpul-simpul dalam level yang sama tidak terurut), saat kita menambahkan atau menghapus simpul, kita hanya perlu memperbaiki urutan pada jalur vertikal tempat simpul tersebut berada. Hal ini membuat operasi *insert* dan *delete* juga memiliki kompleksitas **O(log(N))**.
+
+- Sifat **pohon lengkap** juga menjadikan **array** sebagai pilihan yang baik untuk menyimpan heap karena data tersusun secara kontinu. Seperti yang akan dibahas lebih lanjut dalam modul ini, kita dapat menemukan **induk (parent)** dan **anak (children)** dari suatu simpul hanya dengan melakukan **aritmetika indeks**.
