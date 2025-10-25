@@ -81,12 +81,12 @@ Untuk himpunan {a, b}, terdapat dua permutasi yang mungkin: [a, b] dan [b, a].
 
 **Gambaran semua permutasi dari (a, b, c):**
 
--[a, b, c]
--[a, c, b]
--[b, a, c]
--[b, c, a]
--[c, a, b]
--[c, b, a]
+- [a, b, c]
+- [a, c, b]
+- [b, a, c]
+- [b, c, a]
+- [c, a, b]
+- [c, b, a]
 
 Ada 6 permutasi dari tiga elemen, yang dapat dihitung menggunakan faktorial (n!), di mana:
 n! = n × (n - 1) × (n - 2) × ... × 1
