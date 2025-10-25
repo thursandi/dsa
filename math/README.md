@@ -38,3 +38,57 @@ Contoh pada bilangan biner 1011:
 - 1 berikutnya di posisi dua (2¹)
 - 0 menunjukkan tidak ada nilai di posisi empat (2²)
 - 1 paling kiri di posisi delapan (2³)
+
+## Pengenalan Logaritma (Logarithms)
+
+### Apa itu logaritma?
+
+Logaritma menjawab pertanyaan: *“Pangkat berapa yang harus diberikan pada suatu basis agar menghasilkan bilangan tertentu?”*
+Secara sederhana, logaritma adalah kebalikan dari fungsi eksponensial.
+
+### Contoh Eksponensial dengan Basis 2:
+
+- 2² = 2 × 2 = 4
+- 2³ = 2 × 2 × 2 = 8
+- 2⁴ = 2 × 2 × 2 × 2 = 16
+
+### Memahami Logaritma dengan Basis 2:
+
+Diberikan suatu bilangan, logaritma memberi tahu kita berapa kali 2 harus dikalikan untuk mendapatkan bilangan tersebut.
+
+- log₂(8) = 3 → karena 2 × 2 × 2 = 8
+- log₂(16) = 4 → karena 2 × 2 × 2 × 2 = 16
+
+Atau bisa juga dipahami sebagai: logaritma menunjukkan berapa kali sebuah bilangan dapat dibagi 2 hingga tersisa 1.
+
+- 8 ÷ 2 ÷ 2 ÷ 2 = 1 → maka log₂(8) = 3
+- 16 ÷ 2 ÷ 2 ÷ 2 ÷ 2 = 1 → maka log₂(16) = 4
+
+Logaritma, khususnya dengan basis 2, sangat penting dalam ilmu komputer karena banyak permasalahan komputasi secara alami terbagi dua di setiap langkah (misalnya dalam algoritma binary search atau struktur data seperti binary tree).
+
+## Permutations and factorial
+
+### Himpunan dan Urutan (Sets and Sequences):
+
+**Himpunan (Set):**
+Himpunan adalah kumpulan elemen-elemen yang berbeda (tidak duplikat), dan urutannya tidak penting.
+Contoh: {a, b} — ini sama saja dengan {b, a} karena urutan tidak berpengaruh.
+
+**Permutasi (Permutation):**
+Permutasi adalah *urutan khusus* dari elemen-elemen dalam suatu himpunan.
+Berbeda dengan himpunan, dalam permutasi urutan sangat penting.
+Untuk himpunan {a, b}, terdapat dua permutasi yang mungkin: [a, b] dan [b, a].
+
+**Gambaran semua permutasi dari (a, b, c):**
+
+-[a, b, c]
+-[a, c, b]
+-[b, a, c]
+-[b, c, a]
+-[c, a, b]
+-[c, b, a]
+
+Ada 6 permutasi dari tiga elemen, yang dapat dihitung menggunakan faktorial (n!), di mana:
+n! = n × (n - 1) × (n - 2) × ... × 1
+
+![alt text](permute_tree.png)
